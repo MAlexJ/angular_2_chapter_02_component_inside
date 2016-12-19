@@ -1,0 +1,18 @@
+<p id="root_app">App component <b>"root component"</b></p>
+<child-app>Loading...</child-app>
+<br>
+<br>
+<br>
+<user-app [firstName]="f_name" [lastName]="l_name"></user-app>
+<br>
+<input type="text" placeholder="FName" [(ngModel)]="f_name">
+<br>
+<input type="text" placeholder="LName" [(ngModel)]="l_name">
+<br>
+<br>
+<employee-list-app>Loading...</employee-list-app>
+<br>
+<br>
+<setter-app [name]="s_name">Loading...</setter-app>
+<br>
+<input type="text" [(ngModel)]="s_name" />

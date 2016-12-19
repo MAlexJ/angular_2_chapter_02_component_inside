@@ -1,0 +1,13 @@
+<!-- input form-->
+<div>
+    <h4>Form</h4>
+    <input type="text" placeholder="name text" [(ngModel)]="name"/>
+    <input type="number" placeholder="age number" [(ngModel)]="age"/>
+    <input type="number" placeholder="salary number" [(ngModel)]="salary"/>
+    <button (click)="addItem(name, age, salary)">Add</button>
+</div>
+
+<!-- *ngFor -->
+<div *ngFor="let item of items">
+    Name: {{item.name}}, Age: {{item.age}}, Salary: {{item.salary}}
+</div>
